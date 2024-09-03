@@ -18,7 +18,7 @@ app.use(morgan("dev"));
 
 /*import variables */
 const MONGO_URI = process.env.MONGO_URI;
-const PORT = process.env.PORT
+const PORT = process.env.PORT || 9091;
 
 connectDb(MONGO_URI);
 
